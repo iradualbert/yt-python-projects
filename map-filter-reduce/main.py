@@ -22,7 +22,7 @@ def get_names(students):
     return names
 
 
-def filter_age(students, age):
+def filter_by_age(students, age):
     filtered_students = []
     for student in students:
         if student['age'] >= age:
@@ -36,8 +36,6 @@ def get_name(student):
 def is_old(student):
     return student['age'] >= 5
 
-print(list(filter(is_old, students)))
-print((map(get_name, students)))
 
 
 
